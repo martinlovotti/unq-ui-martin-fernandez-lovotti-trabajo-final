@@ -1,0 +1,41 @@
+.game-logo {
+  margin: 1rem;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.difficulty-btn {
+  border: none;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border-radius: 10px; 
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out; 
+}
+
+.difficulty-btn:hover {
+  transform: scale(1.1); 
+}
+
+.play-btn {
+  margin-bottom: 1rem;
+  padding: 0.8em 2em;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #673ab7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.play-btn:hover {
+  transform: scale(1.05);
+  background-color: #5d08f0;
+}
+

@@ -26,7 +26,7 @@ const answerQuestion = async (questionId, option) => {
     setCorrectCount((prev) => prev + 1);
   }
 
-  // esperar 1 segundo antes de avanzar
+  // esperar antes de avanzar
   setTimeout(() => {
     if (currentIndex + 1 < questions.length) {
       setCurrentIndex((prev) => prev + 1);

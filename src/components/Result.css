@@ -1,0 +1,17 @@
+.result-container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.result-container p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.result-container button {
+  background-color: #ff9800;
+  color: #fff;
+}
