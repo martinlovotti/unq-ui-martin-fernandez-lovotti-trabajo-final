@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { GameContext } from "../context/GameContext";
 
 const ScoreBoard = () => {
-  const { correctCount, questions, currentIndex } = useContext(GameContext);
+  const { correctCount, questions, currentIndex, difficulty } = useContext(GameContext);
 
   return (
     <div style={{ marginBottom: "1rem" }}>
@@ -12,6 +12,9 @@ const ScoreBoard = () => {
       <h3>
         📌 Pregunta {currentIndex + 1} de {questions.length}
       </h3>
+      {difficulty && (
+        <p>🎮 Jugando en dificultad: <strong>{difficulty}</strong></p>
+      )}
     </div>
   );
 };
