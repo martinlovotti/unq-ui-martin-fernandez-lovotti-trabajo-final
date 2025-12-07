@@ -29,10 +29,10 @@ const DifficultySelector = () => {
         ▶️ Jugar
       </button>
 
-      <h2 className="selector-title">🎯 Elegí la dificultad</h2>
+      <h2>🎯 Elegí la dificultad</h2>
 
       {/* Botones de dificultad */}
-      <div className="selector-buttons">
+      <div>
         {difficulties.map((diff) => (
           <button
             key={diff}

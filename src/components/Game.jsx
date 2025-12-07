@@ -4,7 +4,7 @@ import DifficultySelector from "./DifficultySelector";
 import Question from "./Question";
 import Result from "./Result";
 import ScoreBoard from "./ScoreBoard";
-import "./Game.css";
+
 const Game = () => {
   const { difficulty, questions, currentIndex, finished } = useContext(GameContext);
 

@@ -1,14 +1,17 @@
 import React, { useContext } from "react";
 import { GameContext } from "../context/GameContext";
-import "./ScoreBoard.css";
+
 const ScoreBoard = () => {
-  const { correctCount, questions } = useContext(GameContext);
+  const { correctCount, questions, currentIndex } = useContext(GameContext);
 
   return (
     <div style={{ marginBottom: "1rem" }}>
-      <h4>
+      <h2>
         ✅ Correctas: {correctCount} / {questions.length}
-      </h4>
+      </h2>
+      <h3>
+        📌 Pregunta {currentIndex + 1} de {questions.length}
+      </h3>
     </div>
   );
 };

@@ -33,7 +33,7 @@ const answerQuestion = async (questionId, option) => {
     } else {
       setFinished(true);
     }
-  }, 1650);
+  }, 1000);
 
   return result;
 };

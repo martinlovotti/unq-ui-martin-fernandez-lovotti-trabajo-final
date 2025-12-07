@@ -54,26 +54,4 @@ button:focus-visible {
   outline: 4px auto #fff;
 }
 
-a {
-  font-weight: 500;
-  color: #ff0000;
-  text-decoration: none;
-}
-a:hover {
-  color: #ffeb3b;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-  }
-  button {
-    background-color: #4caf50;
-    color: #fff;
-  }
-  button:hover {
-    background-color: #66bb6a;
-  }
-}
 
