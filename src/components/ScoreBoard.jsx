@@ -5,7 +5,7 @@ const ScoreBoard = () => {
   const { correctCount, questions, currentIndex, difficulty } = useContext(GameContext);
 
   return (
-    <div style={{ marginBottom: "1rem" }}>
+    <div>
       <h2>
         ✅ Correctas: {correctCount} / {questions.length}
       </h2>
