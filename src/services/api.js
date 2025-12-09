@@ -19,11 +19,9 @@ const getQuestions = (difficulty = "easy") => {
 
 
 const sendAnswer = (questionId, option) => {
-  console.log("Payload enviado:", { questionId, option });
   return axios
     .post(`/api/answer`, { questionId, option }, { baseURL })
     .then((response) => {
-      console.log("Respuesta del backend:", response.data);
       return response.data;
     })
     .catch(error => {
