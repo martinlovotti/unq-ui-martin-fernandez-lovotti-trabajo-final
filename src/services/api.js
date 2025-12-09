@@ -9,7 +9,6 @@ const getDifficulties = () => axios.get(`/api/difficulty`, { baseURL })
     .catch(error => errorHandler(error, 500, "Error del servidor"));
 
 const getQuestions = (difficulty = "easy") => {
-  console.log("Consultando preguntas con dificultad:", difficulty); // 👈 log
   return axios.get(`/api/questions?difficulty=${difficulty}`, { baseURL })
     .then(response => response.data)
     .catch(error => {

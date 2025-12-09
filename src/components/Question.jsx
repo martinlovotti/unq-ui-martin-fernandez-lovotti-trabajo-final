@@ -8,7 +8,6 @@ const Question = ({ data }) => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   useEffect(() => {
-    console.log("Pregunta recibida:", data);
     // Resetear selección y feedback al cambiar de pregunta
     setSelectedOption(null);
     setFeedback(null);
