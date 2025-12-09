@@ -38,9 +38,6 @@ const answerQuestion = async (questionId, option) => {
   return result;
 };
 
-
-
-
   return (
     <GameContext.Provider
       value={{
